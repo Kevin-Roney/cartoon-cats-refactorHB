@@ -14,7 +14,7 @@ describe('cats routes', () => {
     const res = await request(app).get('/cats');
     const cats = await Cat.getAll();
     const expected = cats.map((cat) => {
-      return { id: cat.id, name: cat.name, type: cat.type, url: cat.url, year: cat.year, lives: cat.lives, isSidekick: cat.isSidekick };
+      return { id: cat.id, name: cat.name };
     });
     expect(res.body).toEqual(expected);
   });
