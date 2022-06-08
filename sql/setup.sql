@@ -1,7 +1,7 @@
 -- Use this file to define your SQL tables
 -- The SQL in this file will be executed when you run `npm run setup-db`
 
-DROP table is exists cartooncats;
+DROP table if exists cartooncats;
 
 CREATE table cartooncats (
   id BIGINT GENERATED ALWAYS AS IDENTITY,
